@@ -1,0 +1,345 @@
+
+/*-----CSS matricula.php*----*/
+
+#contenedor {
+
+  position: absolute;
+  left: 150px;
+
+}
+
+h2 {
+
+text-align: center;
+
+}
+
+fieldset {
+  padding: 1em;
+  font:80%/1 sans-serif;
+  border: 2px solid #009;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  }
+
+
+
+
+
+label {
+  float:left;
+  width:25%;
+  margin-right:0.5em;
+  padding-top:0.2em;
+  text-align:right;
+  font-weight:bold;
+  }
+  legend {
+
+  display: block;
+  margin-left: 3px;
+  padding-top: 2px;
+  text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:15px;
+
+  border-top: 2px solid #009;
+border-left: 2px solid #009;
+border-right:  2px solid #009;
+border-radius: 20px;
+
+
+  }
+
+
+
+#boton {
+
+  position: relative;
+  margin-left: 765px;
+  top: 480px;
+
+
+}
+
+#btn1 {
+
+  -moz-box-shadow: 0px 10px 14px -7px #276873;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+  box-shadow: 0px 10px 14px -7px #276873;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #4ca6c7), color-stop(1, #408c99));
+  background:-moz-linear-gradient(top, #4ca6c7 5%, #408c99 100%);
+  background:-webkit-linear-gradient(top, #4ca6c7 5%, #408c99 100%);
+  background:-o-linear-gradient(top, #4ca6c7 5%, #408c99 100%);
+  background:-ms-linear-gradient(top, #4ca6c7 5%, #408c99 100%);
+  background:linear-gradient(to bottom, #4ca6c7 5%, #408c99 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ca6c7', endColorstr='#408c99',GradientType=0);
+  background-color:#4ca6c7;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:13px 32px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+}
+
+
+#btn1:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #4ca6c7));
+	background:-moz-linear-gradient(top, #408c99 5%, #4ca6c7 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #4ca6c7 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #4ca6c7 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #4ca6c7 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #4ca6c7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#4ca6c7',GradientType=0);
+	background-color:#408c99;
+}
+#btn1:active {
+	position:relative;
+	top:1px;
+}
+
+#datos{
+  position: relative;
+  bottom: 140px;
+}
+
+
+#curso {
+
+width: 150px;
+margin-bottom: 76px;
+font-size: 16px;
+  position: relative;
+  display: inline-block;
+  bottom: 140px;
+}
+
+#curso select {
+  outline: none;
+  -webkit-appearance: none;
+  display: block;
+  padding: 1.2em 3em 1.3em 1.5em;
+  margin: 0;
+
+  transition: border-color 0.2s;
+  border: 2px solid #009;
+  border-radius: 5px;
+  width: 130px;
+
+
+  background: #fff;
+  color: #555;
+  line-height: normal;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+
+#curso .sel {
+  background: #fff;
+  bottom: 5px;
+  position: absolute;
+  right: 10px;
+  top: 52px;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+}
+#curso .sel:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  margin-top: -5px;
+  pointer-events: none;
+  border-top: 10px solid #009;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+#curso .sel:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  margin-top: -5px;
+  pointer-events: none;
+  border-top: 6px solid #fff;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+#modulos {
+
+
+  position: relative;
+  
+  left: 15px;
+  width: 420px;
+  height: 450px;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    background:url(check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(check_radio_sheet.png) -19px top no-repeat;
+}
+ input[type="checkbox"] + label {
+
+   width: 380px;
+   height: 25px;
+   text-align: center;
+   font-family: Arial, Geneva, sans-serif;
+   font-size: 15px;
+   text-align: left;
+ }
+
+ input[type="radio"] {
+     display:none;
+ }
+
+ input[type="radio"] + label span {
+     display:inline-block;
+     width:19px;
+     height:19px;
+     background:url(check_radio_sheet.png) -38px top no-repeat;
+     cursor:pointer;
+ }
+
+ input[type="radio"]:checked + label span {
+     background:url(check_radio_sheet.png) -58px top no-repeat;
+   }
+
+   input[type="radio"] + label {
+
+     width: 380px;
+     height: 25px;
+     text-align: center;
+     font-family: Arial, Geneva, sans-serif;
+     font-size: 15px;
+     text-align: left;
+     border-top: 2px solid #009;
+   border-left: 2px solid #009;
+   border-right:  2px solid #009;
+   border-bottom: 2px solid #009;
+   border-radius: 20px;
+
+   }
+
+
+
+
+
+/* #beca {
+position: relative;
+top: 500px;
+width: 300px;
+height: 40px;
+border: 2px solid #009;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+
+text-align: center;
+}*/
+
+#beca > input {
+
+
+  margin-top: 13px;
+}
+
+#resumen {
+
+  position: fixed;
+  top: 250px;
+  width: 445px;
+
+}
+
+
+
+html {
+    background: #eee;
+}
+
+#registro {
+    font-size: 20px;
+    width: 450px;
+    margin:auto;
+    padding: 30px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -khtml-border-radius: 10px;
+    background: #fff;
+}
+
+#fallo {
+    font-size: 20px;
+    width: 450px;
+    margin:auto;
+    padding: 30px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -khtml-border-radius: 10px;
+    background: #fff;
+}
+
+#registro label {
+    width: 200px;
+    line-height: 30px;
+    padding-top: 2px;
+    float:left;
+}
+
+#registro input {
+    font-size: 20px;
+}
+
+#registro input[type='submit'] {
+    width: 200px;
+    font-size: 30px;
+    margin: 30px auto;
+    border: 1px solid #fff;
+}
+
+#registro .submit {
+    margin: 0 auto;
+    width: 200px;
+}
+
+
+/* #registro .error {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}* /
